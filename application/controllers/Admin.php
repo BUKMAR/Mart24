@@ -20,7 +20,7 @@
 
 			$this->data['kategori'] = $kategori;
 
-			$this->load->view("admin_handle/list_data_barang_view", $this->data);
+			$this->load->view("admin_handle/data_barang_view", $this->data);
 		}
 
 		public function data_transaksi() {

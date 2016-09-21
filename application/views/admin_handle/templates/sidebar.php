@@ -13,14 +13,10 @@
             <a href="<?php echo base_url(); ?>index.php/admin"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Dashboard</a>
         </li>
         <li>
-<<<<<<< HEAD
-            <a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Data Barang</a>
+            <a href="<?php echo base_url(); ?>index.php/admin/form_tambah_barang"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Data Barang</a>
         </li>
         <li>
             <a href="#"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List Data Barang</a>
-=======
-            <a href="<?php echo base_url(); ?>index.php/admin/form_tambah_barang"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Data Barang</a>
->>>>>>> fbaddf7ca6a9f821823eb03af8cd8a92bc62ac20
         </li>
         <li>
             <a href="<?php echo base_url(); ?>index.php/admin/data_transaksi"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>Data Transakasi</a>
