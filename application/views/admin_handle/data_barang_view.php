@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <title>Administrator</title>
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/bootstrap/dist/css/bootstrap.min.css"); ?>">
-   <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/material/dist/css/bootstrap-material-design.min.css"); ?>">
+   <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/material/dist/css/material.min.css"); ?>">
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/material/dist/css/ripples.min.css"); ?>">
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/css/style_admin.css"); ?>">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -49,7 +49,7 @@
                                           <div class="row">
                                             <div class="col-md-4">
                                               <label>Kategori</label>
-                                              <select name="id-kategori" id="input" class="form-control" required="required">
+                                              <select name="id-kategori" id="input" class="form-control" required="required" style="border: 1px solid #dedede; border-radius: 1px;">
                                                   <?php
                                                     foreach($kategori as $value) {
                                                       echo "<option value='". $value['id_kategori'] ."'>". $value['nama_kategori'] ."</option>";
@@ -64,8 +64,8 @@
                                           <div class="row">
                                             <div class="col-md-10">
                                               <label >Deskripsi</label>
-                                              <textarea name="deskripsi" id="input" 
-                                              placeholder="Deskripsi produk dengan jelas dan padat" class="form-control" rows="10" required="required"></textarea>       
+                                              <textarea name="deskripsi" id="input"
+                                              placeholder="Deskripsi produk dengan jelas dan padat" class="form-control" rows="10" required="required"></textarea>
                                             </div>
                                           </div>
                                        </div>
@@ -89,7 +89,7 @@
                                          <div class="row">
                                             <div class="col-md-4">
                                               <label >Satuan Stok</label>
-                                              <select name="satuan-stok" id="input" class="form-control" required="required">
+                                              <select name="satuan-stok" id="input" class="form-control" required="required" style="border: 1px solid #dedede; border-radius: 1px;">
                                                  <option value="Bungkus">Bungkus</option>
                                                  <option value="Kardus">Kardus</option>
                                                  <option value="Karung">Karung</option>
@@ -118,7 +118,7 @@
                                           <div class="row">
                                             <div class="col-md-4">
                                               <label >Satuan Jual Barang</label>
-                                              <select name="satuan-barang" id="input" class="form-control" required="required">
+                                              <select name="satuan-barang" id="input" class="form-control" required="required" style="border: 1px solid #dedede; border-radius: 1px;">
                                                  <option value="1Kg">1Kg</option>
                                                  <option value="1 Piece">1 Piece</option>
                                                  <option value="1/4 Kg">1/4 Kg</option>
