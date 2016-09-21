@@ -16,7 +16,7 @@
             <a href="<?php echo base_url(); ?>index.php/admin/form_tambah_barang"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Data Barang</a>
         </li>
         <li>
-            <a href="#"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List Data Barang</a>
+            <a href="<?php echo base_url(); ?>index.php/admin/list_barang"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List Data Barang</a>
         </li>
         <li>
             <a href="<?php echo base_url(); ?>index.php/admin/data_transaksi"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>Data Transakasi</a>

@@ -18,6 +18,7 @@
                <ul class="dropdown-menu">
                   <li><a href="<?php echo base_url(); ?>admin">Dashboard</a></li>
                   <li><a href="#">Data Barang</a></li>
+                  <li><a href="#">List Data Barang</a></li>
                   <li><a href="#">Data Transakasi</a></li>
                   <li><a href="#">Kategori Barang</a></li>
                   <li><a href="#">Stok Barang</a></li>

@@ -27,6 +27,10 @@
 			$this->load->view("admin_handle/data_transaksi_view");
 		}
 
+		public function list_barang() {
+			$this->load->view("admin_handle/list_data_barang_view");
+		}
+
 		public function kategori_barang() {
 			$this->load->view("admin_handle/kategori_barang_view");
 		}
