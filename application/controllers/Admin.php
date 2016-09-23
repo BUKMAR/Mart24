@@ -23,6 +23,10 @@
 			$this->load->view("admin_handle/data_barang_view", $this->data);
 		}
 
+		public function list_data_barang() {
+			$this->load->view("admin_handle/list_data_barang_view");
+		}
+
 		public function data_transaksi() {
 			$this->load->view("admin_handle/data_transaksi_view");
 		}
@@ -114,6 +118,47 @@
 
 				redirect(site_url());
 			}
+		}
+
+		public function ajax_list_barang() {
+			$this->load->model("Barang_model");
+
+			$barang_model = new Barang_Model();
+
+			$list = $barang_model->get_datatables();
+	        $data = array();
+	        $no = $_POST['start'];
+
+	        foreach ($list as $barang) {
+	            $no++;
+	            $row = array();
+
+	            $row[] = $no;
+	            $row[] = $barang->id_barang;
+	            $row[] = $barang->nama_barang;
+	            $row[] = $barang->nama_kategori;
+	            $row[] = $barang->deskripsi;
+	            $row[] = "<img style='
+	            			height: 58px; 
+	            			width: 75px;
+	            			padding: 5px 5px 5px 5px;
+	            			border: 1px solid #dedede;
+	            			border-radius: 3px 3px 3px 3px;' src='". base_url($barang->foto_barang) ."' />";
+	             $row[] = "<a class='btn btn-md btn-info' href='#'>Edit</a>
+	             		   <a class='btn btn-md btn-danger' href='admin/delete_barang?id_barang=". $barang->id_barang ."'>Delete</a>";
+	 
+	            $data[] = $row;
+	        }
+ 
+	        $output = array(
+	        	"draw" => $_POST['draw'],
+	            "recordsTotal" => $barang_model->count_all(),
+	            "recordsFiltered" => $barang_model->count_filtered(),
+	            "data" => $data,
+	        );
+
+	        //output to json format
+	        echo json_encode($output);
 		}
 
 	}

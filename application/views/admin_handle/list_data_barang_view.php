@@ -20,7 +20,7 @@
       $.material.init();
    </script>
 </head>
-<body>
+<body style="background-color: #ffffff;">
   <div class="container-fluid">
     <?php require_once(APPPATH.'views/admin_handle/templates/navigasi.php'); ?>
      <div id="wrapper">
@@ -32,38 +32,43 @@
                       <div class="container-fluid">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                           <legend><h1><small><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List Data Barang</small></h1></legend>
-
+                          <hr/>
                           <!-- bagian view list data -->
-                          <div class="table-responsive">
-                              <table id="table_id" class="table table-hover">
+                          <br/>
+                          <div class="table-responsive" style="border: 1px solid #dedede; padding: 35px; border-top-right-radius: 7px;
+                            border-top-left-radius: 7px;
+                            border-bottom-right-radius: 7px;
+                            border-bottom-left-radius: 7px;">
+                              <table id="table" class="table table-hover display" 
+                              width="100%" 
+                              cellpadding="1" 
+                              cellspacing="0" cellspacing="0" width="100%">
                                  <thead>
                                     <tr>
-                                       <th>Id Barang</th>
+                                       <th>No</th>
+                                       <th>ID Barang</th>
                                        <th>Nama Barang</th>
                                        <th>Kategori</th>
-                                       <th>Stok</th>
-                                       <th>Harga</th>
-                                       <th colspan="2" align="center">Aksi</th>
+                                       <th>Deskrispi</th>
+                                       <th>Foto</th>
+                                       <th>Aksi</th>
                                     </tr>
                                  </thead>
                                  <tbody>
-                                    <tr>
-                                       <td></td>
-                                       <td></td>
-                                       <td></td>
-                                       <td></td>
-                                       <td></td>
-                                       <td>
-                                          <button type="button" class="btn btn-sm btn-info" style="margin-top:-1px;" data-toggle="modal" data-target="#modal_edit">
-                                          <span class="glyphicon glyphicon-pencil" aria-hidden="true" ></span></button>
-                                          <button type="button" class="btn btn-sm btn-danger" style="margin-top:-1px;">
-                                          <span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
-                                       </td>
-                                    </tr>
                                  </tbody>
+                                 <tfoot>
+                                    <tr>
+                                       <th>No</th>
+                                       <th>ID Barang</th>
+                                       <th>Nama Barang</th>
+                                       <th>Kategori</th>
+                                       <th>Deskrispi</th>
+                                       <th>Foto</th>
+                                       <th>Aksi</th>
+                                    </tr>
+                                 </tfoot>
                               </table>
                            </div> <!-- end div tabel responsive -->
-
                            <!-- modal edit data -->
                            <div class="modal fade" id="modal_edit">
                               <div class="modal-dialog">
@@ -183,9 +188,6 @@
                                  </div>
                               </div>
                            </div> <!-- end div modal edit data barang -->
-
-
-
                         </div>
                       </div>
                     </div>
@@ -195,5 +197,28 @@
           <!-- /#page-content-wrapper -->
      </div> <!-- end wrapper menu left -->
   </div>
+  <script src="<?php echo base_url('assets/datatables/js/jquery.dataTables.min.js')?>"></script>
+  <link href="<?php echo base_url('assets/datatables/css/jquery.dataTables.min.css')?>" rel="stylesheet">
+  <script type="text/javascript">
+    $(function() {
+        var table = $('#table').DataTable({ 
+              "processing": true, //Feature control the processing indicator.
+              "serverSide": true, //Feature control DataTables' server-side processing mode.
+              "order": [], //Initial no order.
+              // Load data for the table's content from an Ajax source
+              "ajax": {
+                  "url": "<?php echo site_url('admin/ajax_list_barang')?>",
+                  "type": "POST"
+              },
+              //Set column definition initialisation properties.
+              "columnDefs": [
+              { 
+                  "targets": [0], //first column / numbering column
+                  "orderable": false, //set not orderable
+              },
+              ],
+        }); 
+    });
+  </script>
 </body>
 </html>

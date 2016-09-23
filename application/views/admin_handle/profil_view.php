@@ -31,7 +31,8 @@
                   <div class="col-lg-12">
                     <div class="container-fluid">
                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <legend><h1><small><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profil Admin</small></h1></legend>
+                        <legend><h1><small><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profil</small></h1></legend>
+                        <legend><h1><small><span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span> Profil Admin</small></h1></legend>
                       </div>
                     </div>
                   </div>

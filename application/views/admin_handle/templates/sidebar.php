@@ -5,7 +5,7 @@
         </li>
         <li>
             <div class="box-profil">
-                <img src="<?php echo base_url("assets/images/admin.png"); ?>" alt="..." class="img-circle " width="100" height="100"><br>
+                <img src="<?php echo base_url("assets/images/admin.png"); ?>" alt="..." class="img-circle " width="110" height="110"><br>
                 <p class="nama_profile">Administrator</p>
             </div>
         </li>
@@ -13,10 +13,10 @@
             <a href="<?php echo base_url(); ?>index.php/admin"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Dashboard</a>
         </li>
         <li>
-            <a href="<?php echo base_url(); ?>index.php/admin/form_tambah_barang"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Data Barang</a>
+            <a href="<?php echo base_url(); ?>index.php/admin/list_data_barang"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List Data Barang</a>
         </li>
         <li>
-            <a href="<?php echo base_url(); ?>index.php/admin/list_barang"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List Data Barang</a>
+            <a href="<?php echo base_url(); ?>index.php/admin/form_tambah_barang"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Data Barang</a>
         </li>
         <li>
             <a href="<?php echo base_url(); ?>index.php/admin/data_transaksi"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>Data Transakasi</a>
