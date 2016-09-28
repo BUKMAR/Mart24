@@ -122,7 +122,7 @@
                                  </div>
                                  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                     <div class="table-responsive">
-                                       <table class="table table-hover">
+                                       <table class="table">
                                           <thead>
                                              <tr>
                                                 <th>Paket <?php echo $i; ?></th>
@@ -131,12 +131,16 @@
                                           <tbody>
                                              <tr>
                                                 <td>
+                                                <p style="font-weight: bold;">Keterangan</p>
                                                    <ul class="list-group">
                                                       <li class="list-group-item">Item 1</li>
                                                       <li class="list-group-item">Item 2</li>
                                                       <li class="list-group-item">Item 3</li>
                                                    </ul>
+                                                <p>Stok Tersedia : </p>
+                                                <p style="font-size: 25px; margin: 0px;">Rp. 20.000.00,-</p>
                                                 </td>
+
                                              </tr>
                                           </tbody>
                                        </table>
@@ -153,10 +157,26 @@
                </div>
             <?php endfor ?>
 
+            <!-- footer -->
+            <nav class="navbar navbar-default" role="navigation" style="background-color: #424242; margin: 0px;">
+               <div class="container">
+                  <ul class="nav navbar-nav">
+                     <li class="active">
+                        <a href="#">Home</a>
+                     </li>
+                     <li>
+                        <a href="#">Link</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+
             </div>
         </div>
         <!-- /#page-content-wrapper -->
-   </div> <!-- end wrapper menu left -->
+      </div> <!-- end wrapper menu left -->
    </div>
+
+
 </body>
 </html>
