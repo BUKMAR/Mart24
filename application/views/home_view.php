@@ -71,7 +71,7 @@
 
 <body>
 	<!-- <div class="container-fluid"> -->
-		<nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="height: 48px; border-bottom:6px #8fc800 solid;">
+		<nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="background-color: #424242;">
 			<div class="container">
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -96,6 +96,7 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <div class="panel panel-default">
+               <img src="<?php echo base_url("assets/images/icon.jpg"); ?>" class="img-responsive" alt="Image">
                <div class="panel-body">
                   <input type="text" name="" id="input" class="form-control" value="" required="required" title="" placeholder="Aku mau belanja...">
                   <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
@@ -131,7 +132,7 @@
 
                      <?php for ($i = 1; $i <= 12; $i++): ?>
 
-                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                     <div class="col-md-3">
                         <div class="panel panel-default">
                            <div class="panel-body">
                               <img src="<?php echo base_url("assets/images/masako.jpg"); ?>" class="img-responsive" alt="Image" height="140" width="180">
@@ -153,20 +154,5 @@
         <!-- /#page-content-wrapper -->
    </div> <!-- end wrapper menu left -->
    </div>
-
-
-
-   <nav class="navbar navbar-info navbar-fixed-bottom" role="navigation">
-      <div class="container">
-         <ul class="nav navbar-nav footer-set" style="margin-top: -3px;">
-            <li>
-               <a href="#">BBM : 5CCB6C1E</a>
-            </li>
-            <li>
-               <a href="#">WA / Telegram : 085728648065</a>
-            </li>
-         </ul>
-      </div>
-   </nav>
 </body>
 </html>
