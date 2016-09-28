@@ -76,7 +76,6 @@
 </style>
 
 <body>
-	<!-- <div class="container-fluid"> -->
 	<nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="background-color: #183544;">
 			<div class="container">
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -95,22 +94,22 @@
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>
-	</nav>
-	<!-- </div> -->
+	</nav
 
    <div class="container-fluid">
       <div id="wrapper" style="margin-left: 30px;">
         <!-- Sidebar -->
         <div id="sidebar-wrapper" style="width: 285px;">
-         <div class="img-sidebar">
-            <img src="<?php echo base_url("assets/images/icon.jpg"); ?>" class="img-responsive" alt="Image" >
-         </div>
+            <div class="img-sidebar">
+               <img src="<?php echo base_url("assets/images/icon.jpg"); ?>" class="img-responsive" alt="Image" >
+            </div>
         </div>
         <!-- /#sidebar-wrapper -->
 
          <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
+
             <?php for ($i = 0; $i < count($barang); $i++): ?>
                <?php $item = $barang[$i]; ?>
                <div class="row">
@@ -118,6 +117,7 @@
                      <div class="container-fluid">
                         <div class="panel panel-default">
                            <div class="panel-body">
+                           <!-- panel body katalog -->
                               <div class="row">
                                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                     <img src="<?php echo base_url($item['foto']); ?>" class="img-responsive" alt="Image">
@@ -154,10 +154,62 @@
                   </div> <!-- end col content -->
                </div>
             <?php endfor ?>
+
+         <nav class="navbar navbar-default" role="navigation" style="background-color: #183544;">
+            <div class="container">
+               <div class="row">
+                 <div class="col-md-5 col-md-offset-4" style="letter-spacing: 2px;  font-weight: bold; margin-top: 10px;">BUKMAR</div>
+               </div>
+            <ul class="nav navbar-nav" style="margin-left: 190px; float: left; color: #fff;">
+               <li><a href="#">Sragen</a></li>
+               <li><a href="#">Jakarta</a></li>
+               <li><a href="#">Yogyakarta</a></li>
+               <li><a href="#">Solo</a></li>
+               <li><a href="#">Bogor</a></li>
+               <li><a href="#">Surabaya</a></li>
+               <li><a href="#">Malang</a></li>
+            </ul>
             </div>
-        </div>
+            <div class="container" style="margin-left: 15px;">
+               <div class="row">
+                 <div class="col-md-4">
+                    <p style="letter-spacing: 2px; margin-left: -5px;">Informasi</p>
+                    <div class="list-group" style="margin-left: -20px; font-size: 12px;">
+                       <a href="#" class="list-group-item active">Tentang Bukmar</a>
+                       <a href="#" class="list-group-item active">Hubungi Kami</a>
+                       <a href="#" class="list-group-item active">Karir</a>
+                       <a href="#" class="list-group-item active">Cara Pembelian</a>
+                       <a href="#" class="list-group-item active">Lokasi Toko</a>
+                    </div>
+                 </div>
+                 <div class="col-md-4">
+                    <p style="letter-spacing: 2px; margin-left: -5px;">Bukmar</p>
+                    <div class="list-group" style="margin-left: -20px; font-size: 12px;">
+                       <a href="#" class="list-group-item active">Syarat dan Ketentuan</a>
+                       <a href="#" class="list-group-item active">Kebijakan Privasi</a>
+                       <a href="#" class="list-group-item active">Daftar Produk</a>
+                       <a href="#" class="list-group-item active">Produk Populer</a>
+                    </div>
+                 </div>
+                 <div class="col-md-4">
+                    <p style="letter-spacing: 2px; margin-left: -5px;">Bantuan</p>
+                    <div class="list-group" style="margin-left: -20px; font-size: 12px;">
+                       <a href="#" class="list-group-item active">Ada Pertanyaan ?</a>
+                       <a href="#" class="list-group-item active">Hubungi Kami di Live Chat</a>
+                       <a href="#" class="list-group-item active">Email : bukmarwidoro@gmail.com</a>
+                       <a href="#" class="list-group-item active">Ikuti Medsos Kami</a>
+                       <a href="#" class="list-group-item active">Youtube</a>
+                    </div>
+                 </div>
+               </div>
+            </div>
+         </nav>
+
+
+
         <!-- /#page-content-wrapper -->
       </div> <!-- end wrapper menu left -->
    </div>
+
 </body>
 </html>

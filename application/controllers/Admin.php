@@ -17,7 +17,7 @@
 
 			$this->load->view("admin_handle/data_barang_view", $this->data);
 
-			$this->load->view("admin_handle/data_barang_view");
+			// $this->load->view("admin_handle/data_barang_view");
 
 		}
 
