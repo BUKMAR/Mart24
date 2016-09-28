@@ -147,6 +147,8 @@
                            </div>
                         </div>
                      </div>
+               <div class="row">
+                  <div class="col-xs-8 col-sm-8 col-md-12">
                   </div> <!-- end col content -->
                </div>
             <?php endfor ?>
