@@ -47,26 +47,16 @@
                                     <tr>
                                        <th>No</th>
                                        <th>ID Barang</th>
-                                       <th>Nama Barang</th>
-                                       <th>Kategori</th>
-                                       <th>Deskrispi</th>
+                                       <th>Nama Paket</th>
+                                       <th>Tanggal Upload</th>
+                                       <th>Harga Jual</th>
+                                       <th>Harga Beli</th>
                                        <th>Foto</th>
                                        <th>Aksi</th>
                                     </tr>
                                  </thead>
                                  <tbody>
                                  </tbody>
-                                 <tfoot>
-                                    <tr>
-                                       <th>No</th>
-                                       <th>ID Barang</th>
-                                       <th>Nama Barang</th>
-                                       <th>Kategori</th>
-                                       <th>Deskrispi</th>
-                                       <th>Foto</th>
-                                       <th>Aksi</th>
-                                    </tr>
-                                 </tfoot>
                               </table>
                            </div> <!-- end div tabel responsive -->
                            <!-- modal edit data -->

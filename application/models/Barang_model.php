@@ -2,8 +2,10 @@
 	class Barang_Model extends CI_Model {
 
 		private $table = 'barang';
-		private $column_order = array(null, 'id_barang','nama_barang','nama_kategori','deskripsi', null); //set column field database for datatable orderable
-		private $column_search = array('id_barang','nama_barang','nama_kategori','deskripsi','foto_barang'); //set column field database for datatable searchable 
+		private $column_order = 
+		array(null, 'id_barang','nama_paket','tgl_upload','harga_jual', 'harga_jual', 'foto'); //set column field database for datatable orderable
+		private $column_search = 
+		array('id_barang','nama_paket','tgl_upload','harga_jual', 'harga_jual', 'foto'); //set column field database for datatable searchable 
 		private $order = array('id_barang' => 'asc'); // default order 
 
 		public function __construct() {
@@ -19,7 +21,7 @@
 		}
  
 	    private function _get_datatables_query() {
-	        $this->db->from("barang, kategori");
+	        $this->db->from("barang");
 	        $i = 0;
 	        
 	     	// loop column 
@@ -50,8 +52,6 @@
 	            $order = $this->order;
 	            $this->db->order_by(key($order), $order[key($order)]);
 	        }
-
-	        $this->db->where("`barang`.`id_kategori`=`kategori`.`id_kategori`");
 	    }
 	 
 	    function get_datatables() {

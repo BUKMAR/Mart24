@@ -12,9 +12,7 @@
 		}
 
 		public function form_tambah_barang() {
-			$this->data['kategori'] = array();
-
-			$this->load->view("admin_handle/data_barang_view", $this->data);
+			$this->load->view("admin_handle/data_barang_view");
 		}
 
 		public function list_data_barang() {
@@ -42,15 +40,11 @@
 		}
 
 		public function submit_tambah_barang() {
-			$nama_barang = $this->input->post("nama-barang");
-			$id_kategori = $this->input->post("id-kategori");
-			$deskripsi = $this->input->post("deskripsi");
+			$nama_paket = $this->input->post("nama-paket");
+			$keterangan = $this->input->post("keterangan");
 			$stok_barang = $this->input->post("stok-barang");
-			$satuan_stok = $this->input->post("satuan-stok");
-			$id_kategori = $this->input->post("id-kategori");
 			$harga_beli = $this->input->post("harga-beli");
 			$harga_jual = $this->input->post("harga-jual");
-			$satuan_barang = $this->input->post("satuan-barang");
 
 			$path = realpath(APPPATH . '../assets/uploads');
 
@@ -71,12 +65,16 @@
 				$upload_data = $this->upload->data();
 
 				$file_name = 'assets/uploads/'. $upload_data['file_name'];
+				$date = date('Y-m-d');
 
 				$data_barang = array(
-					"nama_barang" => $nama_barang,
-					"id_kategori" => $id_kategori,
-					"deskripsi" => $deskripsi,
-					"foto_barang" => $file_name
+					"nama_paket" => $nama_paket,
+					"keterangan" => $keterangan,
+					"tgl_upload" => $date,
+					"foto" => $file_name,
+					"harga_beli" => $harga_beli,
+					"harga_jual" => $harga_jual,
+					"stok" => $stok_barang
 				);
 
 				$this->load->model("Barang_Model");
@@ -84,31 +82,6 @@
 				$barang_model = new Barang_Model();
 
 				$id_barang = $barang_model->insert($data_barang);
-
-				$data_detail_harga_barang = array(
-					"id_barang" => $id_barang,
-					"harga_beli" => $harga_beli,
-					"harga_jual" => $harga_jual,
-					"satuan" => $satuan_barang
-				);
-
-				$this->load->model("Detail_Harga_Barang_Model");
-
-				$detail_harga_barang_model = new Detail_Harga_Barang_Model();
-
-				$detail_harga_barang_model->insert($data_detail_harga_barang);
-
-				$data_stok = array(
-					"id_barang" => $id_barang,
-					"satuan" => $satuan_stok,
-					"stok" => $satuan_barang
-				);
-
-				$this->load->model("Stok_Model");
-
-				$stok = new Stok_Model();
-
-				$stok->insert($data_stok);
 
 				redirect(site_url());
 			}
@@ -127,19 +100,25 @@
 	            $no++;
 	            $row = array();
 
+	            $date_formated = date_format(date_create($barang->tgl_upload), "d-m-Y");
+	            $harga_jual = "Rp. ". number_format($barang->harga_jual, 0, ".", ".");
+	            $harga_beli = "Rp. ". number_format($barang->harga_beli, 0, ".", ".");
+
 	            $row[] = $no;
 	            $row[] = $barang->id_barang;
-	            $row[] = $barang->nama_barang;
-	            $row[] = $barang->nama_kategori;
-	            $row[] = $barang->deskripsi;
-	            $row[] = "<img style='
+	            $row[] = $barang->nama_paket;
+	            $row[] = $date_formated;
+	            $row[] = $harga_jual;
+	            $row[] = $harga_beli;
+	           	$row[] = "<img style='
 	            			height: 58px; 
 	            			width: 75px;
 	            			padding: 5px 5px 5px 5px;
 	            			border: 1px solid #dedede;
-	            			border-radius: 3px 3px 3px 3px;' src='". base_url($barang->foto_barang) ."' />";
-	             $row[] = "<a class='btn btn-md btn-info' href='#'>Edit</a>
-	             		   <a class='btn btn-md btn-danger' href='admin/delete_barang?id_barang=". $barang->id_barang ."'>Delete</a>";
+	            			border-radius: 3px 3px 3px 3px;' src='". base_url($barang->foto) ."' />";
+	             $row[] = "<a class='btn btn-sm btn-info' href='#'>Edit</a>
+	             		   <a class='btn btn-sm btn-danger' href='#'>Delete</a>
+	             		   <a class='btn btn-sm btn-success' href='#'>Detail</a>";
 	 
 	            $data[] = $row;
 	        }
