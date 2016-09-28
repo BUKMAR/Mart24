@@ -96,6 +96,7 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <div class="panel panel-default">
+               <img src="<?php echo base_url("assets/images/icon.jpg"); ?>" class="img-responsive" alt="Image">
                <div class="panel-body">
                   <input type="text" name="" id="input" class="form-control" value="" required="required" title="" placeholder="Aku mau belanja...">
                   <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
@@ -131,7 +132,7 @@
 
                      <?php for ($i = 1; $i <= 12; $i++): ?>
 
-                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                     <div class="col-md-3">
                         <div class="panel panel-default">
                            <div class="panel-body">
                               <img src="<?php echo base_url("assets/images/masako.jpg"); ?>" class="img-responsive" alt="Image" height="140" width="180">
