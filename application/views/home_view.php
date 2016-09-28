@@ -140,7 +140,7 @@
                                           </tbody>
                                        </table>
                                        <p style="font-size: 15px; margin: 0px;" class="text-danger"><del>Rp. 20.0000,-<del></p>
-                                       <p style="font-size: 25px;">Rp. 40.000,-</p>
+                                       <p style="font-size: 25px; font-weight: 700;">Rp. 40.000,-</p>
                                     </div>
                                     <a class="btn btn-md btn-danger" href="#" role="button">Pesan Sekarang</a>
                                  </div>
