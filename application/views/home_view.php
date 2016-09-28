@@ -67,6 +67,12 @@
    .navbar {min-height: 4px;}
    .navbar-brand {padding: 0 15px; height: 4px; line-height: 80px;}
 
+   .img-sidebar img {
+      display: block;
+      width: 245px;
+      margin-left: auto;
+      margin-right: auto;
+   }
 </style>
 
 <body>
@@ -94,61 +100,57 @@
    <div class="container-fluid">
       <div id="wrapper" style="margin-left: 30px;">
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <div class="panel panel-default">
-               <img src="<?php echo base_url("assets/images/icon.jpg"); ?>" class="img-responsive" alt="Image">
-               <div class="panel-body">
-                  <input type="text" name="" id="input" class="form-control" value="" required="required" title="" placeholder="Aku mau belanja...">
-                  <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
-                     <div class="form-group">
-                        <label>Berdasarkan Lokasi</label>
-                        <select name="alamat_jalan_kos" id="input" class="form-control" >
-                           <option value="Kota Yogyakarta">Kota Yogyakarta</option>
-                           <option value="Bantul">Bantul</option>
-                           <option value="Sleman">Sleman</option>
-                           <option value="" selected>Semua Kategori</option>
-                        </select>
-                     </div>
-                  <!-- </div> -->
-                  <div class="form-group">
-                     <button type="submit" class="btn btn-block btn-raised btn-danger">Search</button>
-                  </div>
-               </div>
-            </div>
+        <div id="sidebar-wrapper" style="width: 285px;">
+         <div class="img-sidebar">
+            <img src="<?php echo base_url("assets/images/icon.jpg"); ?>" class="img-responsive" alt="Image" >
+         </div>
         </div>
         <!-- /#sidebar-wrapper -->
 
          <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  <div class="iklan">
-                     <img src="<?php echo base_url("assets/images/delivery-order.jpg"); ?>" class="img-responsive" alt="Image" height="80" width="380">
-                  </div>
-                  <br>
-               </div>
+            <?php for ($i = 1; $i <= 4; $i++): ?>
                <div class="row">
                   <div class="col-xs-8 col-sm-8 col-md-12">
-
-                     <?php for ($i = 1; $i <= 12; $i++): ?>
-
-                     <div class="col-md-3">
+                     <div class="container-fluid">
                         <div class="panel panel-default">
                            <div class="panel-body">
-                              <img src="<?php echo base_url("assets/images/masako.jpg"); ?>" class="img-responsive" alt="Image" height="140" width="180">
-                              <p align="center">Bumbu Masako 1 Pack</p>
-                              <p align="center" style="font-family: sans-serif; font-weight: bold;">Rp. 5.000.00,-</p>
-                           </div>
-                           <div class="panel-footer">
-                              <a class="btn btn-sm btn-block btn-raised btn-info" href="#" target="_blank" role="button"></span> Detail</a>
+                              <div class="row">
+                                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img src="<?php echo base_url("assets/images/masako.jpg"); ?>" class="img-responsive" alt="Image">
+                                 </div>
+                                 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                    <div class="table-responsive">
+                                       <table class="table table-hover">
+                                          <thead>
+                                             <tr>
+                                                <th>Paket <?php echo $i; ?></th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>
+                                                   <ul class="list-group">
+                                                      <li class="list-group-item">Item 1</li>
+                                                      <li class="list-group-item">Item 2</li>
+                                                      <li class="list-group-item">Item 3</li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                    <a class="btn btn-md btn-danger" href="#" role="button">Pesan Sekarang</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
-
-                     <?php endfor ?>
-
                   </div> <!-- end col content -->
                </div>
+            <?php endfor ?>
+
             </div>
         </div>
         <!-- /#page-content-wrapper -->
