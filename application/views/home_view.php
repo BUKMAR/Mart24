@@ -96,7 +96,7 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <div class="panel panel-default">
-               <img src="<?php echo base_url("assets/images/icon.jpg"); ?>" class="img-responsive" alt="Image">
+               <img src="#" class="img-responsive" alt="Image">
                <div class="panel-body">
                   <input type="text" name="" id="input" class="form-control" value="" required="required" title="" placeholder="Aku mau belanja...">
                   <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->

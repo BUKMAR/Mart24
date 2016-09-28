@@ -12,13 +12,7 @@
 		}
 
 		public function form_tambah_barang() {
-			$this->load->model("Kategori_model");
-
-			$kategori_model = new Kategori_Model();
-
-			$kategori = $kategori_model->fetch_all();
-
-			$this->data['kategori'] = $kategori;
+			$this->data['kategori'] = array();
 
 			$this->load->view("admin_handle/data_barang_view", $this->data);
 		}
