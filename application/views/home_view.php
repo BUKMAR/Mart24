@@ -77,12 +77,13 @@
 
 <body>
 	<!-- <div class="container-fluid"> -->
-	<nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="background-color: #424242;">
+	<nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="background-color: #183544;">
 			<div class="container">
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav">
 						<li><a href="#">  <p class="brand">BUKMAR</sub>.com</p></a></li>
+                  <li><a href="#" style="letter-spacing: 1px; color: #fff; margin-left: 85px;">Hubungi Kami : </a></li><p style="color: #F36F36; float: left; margin-top: 13px; margin-left: -10px; letter-spacing: 2px;">0274 - 566 569</p>
 					</ul>
 					<ul class="nav navbar-nav navbar-right move-button">
 						<li>
@@ -142,7 +143,7 @@
                                        <p style="font-size: 15px; margin: 0px;" class="text-danger"><del>Rp. 20.0000,-<del></p>
                                        <p style="font-size: 25px; font-weight: 700;">Rp. 40.000,-</p>
                                     </div>
-                                    <a class="btn btn-md btn-danger" href="#" role="button">Pesan Sekarang</a>
+                                    <a class="btn btn-md btn-danger" href="#" role="button" style="background-color: #FF5A00;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Pesan Sekarang</a>
                                  </div>
                               </div>
                            </div>
