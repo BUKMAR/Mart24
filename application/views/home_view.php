@@ -71,7 +71,7 @@
 
 <body>
 	<!-- <div class="container-fluid"> -->
-		<nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="height: 48px; border-bottom:6px #8fc800 solid;">
+		<nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="background-color: #424242;">
 			<div class="container">
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -153,20 +153,5 @@
         <!-- /#page-content-wrapper -->
    </div> <!-- end wrapper menu left -->
    </div>
-
-
-
-   <nav class="navbar navbar-info navbar-fixed-bottom" role="navigation">
-      <div class="container">
-         <ul class="nav navbar-nav footer-set" style="margin-top: -3px;">
-            <li>
-               <a href="#">BBM : 5CCB6C1E</a>
-            </li>
-            <li>
-               <a href="#">WA / Telegram : 085728648065</a>
-            </li>
-         </ul>
-      </div>
-   </nav>
 </body>
 </html>
