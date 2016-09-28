@@ -77,7 +77,7 @@
 
 <body>
 	<!-- <div class="container-fluid"> -->
-		<nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="background-color: #424242;">
+	<nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="background-color: #424242;">
 			<div class="container">
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -94,7 +94,7 @@
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>
-		</nav>
+	</nav>
 	<!-- </div> -->
 
    <div class="container-fluid">
@@ -110,7 +110,8 @@
          <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-            <?php for ($i = 1; $i <= 4; $i++): ?>
+            <?php for ($i = 0; $i < count($barang); $i++): ?>
+               <?php $item = $barang[$i]; ?>
                <div class="row">
                   <div class="col-xs-8 col-sm-8 col-md-12">
                      <div class="container-fluid">
@@ -118,32 +119,28 @@
                            <div class="panel-body">
                               <div class="row">
                                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <img src="<?php echo base_url("assets/images/masako.jpg"); ?>" class="img-responsive" alt="Image">
+                                    <img src="<?php echo base_url($item['foto']); ?>" class="img-responsive" alt="Image">
                                  </div>
                                  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                                    <div class="table-responsive">
-                                       <table class="table">
+                                    <div class="table-responsive" style="margin: 0px;">
+                                       <table class="table" style="margin: 0px;">
                                           <thead>
                                              <tr>
-                                                <th>Paket <?php echo $i; ?></th>
+                                                <th><h3 style="margin: 0px;"><?php echo $item['nama_paket']; ?></h3></th>
                                              </tr>
                                           </thead>
                                           <tbody>
                                              <tr>
                                                 <td>
-                                                <p style="font-weight: bold;">Keterangan</p>
-                                                   <ul class="list-group">
-                                                      <li class="list-group-item">Item 1</li>
-                                                      <li class="list-group-item">Item 2</li>
-                                                      <li class="list-group-item">Item 3</li>
-                                                   </ul>
-                                                <p>Stok Tersedia : </p>
-                                                <p style="font-size: 25px; margin: 0px;">Rp. 20.000.00,-</p>
+                                                   <p>Keterangan</p>
+                                                   <?php echo $item['keterangan']; ?>
                                                 </td>
-
+                                                <td><p class="text-success" style="font-weight: bold;">Stok Tersedia</p></td>
                                              </tr>
                                           </tbody>
                                        </table>
+                                       <p style="font-size: 15px; margin: 0px;" class="text-danger"><del>Rp. 20.0000,-<del></p>
+                                       <p style="font-size: 25px;">Rp. 40.000,-</p>
                                     </div>
                                     <a class="btn btn-md btn-danger" href="#" role="button">Pesan Sekarang</a>
                                  </div>
@@ -156,27 +153,10 @@
                   </div> <!-- end col content -->
                </div>
             <?php endfor ?>
-
-            <!-- footer -->
-            <nav class="navbar navbar-default" role="navigation" style="background-color: #424242; margin: 0px;">
-               <div class="container">
-                  <ul class="nav navbar-nav">
-                     <li class="active">
-                        <a href="#">Home</a>
-                     </li>
-                     <li>
-                        <a href="#">Link</a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
-
             </div>
         </div>
         <!-- /#page-content-wrapper -->
       </div> <!-- end wrapper menu left -->
    </div>
-
-
 </body>
 </html>

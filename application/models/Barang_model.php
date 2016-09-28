@@ -20,6 +20,14 @@
    			return  $insert_id;
 		}
  
+ 		public function fetch_all() {
+ 			$this->db->select("*");
+ 			$this->db->from("barang");
+ 			$query = $this->db->get();
+
+ 			return $query->result_array();
+ 		}
+
 	    private function _get_datatables_query() {
 	        $this->db->from("barang");
 	        $i = 0;

@@ -24,6 +24,12 @@ class Welcome extends CI_Controller {
 	}
 
 	public function index() {
-		$this->load->view('home_view');
+		$this->load->model("Barang_model");
+
+		$barang_model = new Barang_Model();
+
+		$this->data['barang'] = $barang_model->fetch_all();
+
+		$this->load->view('home_view', $this->data);
 	}
 }
