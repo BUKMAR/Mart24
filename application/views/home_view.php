@@ -76,7 +76,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="#"><p class="brand">BUKMAR</sub>.com</p></a></li>
+						<li><a href="#">  <p class="brand">BUKMAR</sub>.com</p></a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right move-button">
 						<li>
@@ -97,7 +97,6 @@
         <div id="sidebar-wrapper">
             <div class="panel panel-default">
                <div class="panel-body">
-                  <img src="<?php echo base_url("assets/images/icon.jpg"); ?>" class="img-responsive" alt="Image">
                   <input type="text" name="" id="input" class="form-control" value="" required="required" title="" placeholder="Aku mau belanja...">
                   <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
                      <div class="form-group">
