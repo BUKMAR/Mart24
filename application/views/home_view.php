@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
+    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <title>BUKMAR</title>
    <link rel="icon" href="<?php echo base_url("assets/images/icon.jpg"); ?>">
@@ -16,26 +16,10 @@
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap/js/dropdown.js"); ?>"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/material/dist/js/ripples.min.js"); ?>"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/material/dist/js/material.min.js"); ?>"></script>
-
-  <script type="text/javascript">
-      $.material.init();
-   </script>
 </head>
 
 <style type="text/css" media="screen">
-	.navbar {
-		min-height: 10px;
-	}
-
-   body {
-      background-color: #fff;
-   }
-
-   .iklan {
-      border: 1px solid #dedede;
-   }
-
-   .brand {
+  .brand {
       font-weight: bold;
       font-size: 23px;
       word-spacing: 10px;
@@ -45,29 +29,9 @@
       color: #FF5A00;
    }
 
-
-	.nav li > a {
-		margin-top: -8px;
-	}
-
-	.hover-link a {
-		color: black;
-	}
-
-   .footer-set {
-      font-weight: bold;
-      font-size: 15px;
-      color: #000;
+   body {
+    background-color: #fff;
    }
-
-   .navbar-nav { color: #000; }
-
-   .move-button {
-      margin-left: -30px;
-   }
-
-   .navbar {min-height: 4px;}
-   .navbar-brand {padding: 0 15px; height: 4px; line-height: 80px;}
 
    .img-sidebar img {
       display: block;
@@ -78,8 +42,9 @@
 </style>
 
 <body>
-   <?php require_once(APPPATH .'views/templates/navigasi.php'); ?>
-   <div class="container-fluid">
+    <?php require_once(APPPATH .'views/templates/navigasi.php'); ?>
+
+     <div class="container-fluid">
       <div id="wrapper" style="margin-left: 30px;">
         <!-- Sidebar -->
         <div id="sidebar-wrapper" style="width: 285px;">
@@ -218,6 +183,8 @@
       </div> <!-- end wrapper menu left -->
    </div>
 
+
+
+
 </body>
 </html>
-

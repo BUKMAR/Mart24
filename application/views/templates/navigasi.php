@@ -12,25 +12,25 @@
     background-color: #183544;
    }
 </style>
-   <nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="background-color: #183544;">
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #183544; margin-top: -5px;">
       <div class="container">
-        <!— Collect the nav links, forms, and other content for toggling —>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">  <p class="brand">BUKMAR</sub>.com</p></a></li>
-            <li><a href="#" style="letter-spacing: 1px; color: #fff; margin-left: 85px;">Hubungi Kami : </a></li><p style="color: #F36F36; float: left; margin-top: 13px; margin-left: -10px; letter-spacing: 2px;">0274 - 566 569</p>
-          </ul>
-          <ul class="nav navbar-nav navbar-right move-button">
-            <li>
-              <a class="btn btn-sm btn-danger" data-toggle="modal" href='#myModal' style="height: 40px;">Log in</a>
-            </li>
-            <li>
-              <a class="btn btn-sm btn-info" href="<?php echo base_url("index.php/home/register"); ?>" style="height: 40px;">DAFTAR</a>
-            </li>
-          </ul>
-        </div><!— /.navbar-collapse —>
+        <a class="navbar-brand" href="#"><p class="brand">BUKMAR</sub>.com</p></a>
+        <ul class="nav navbar-nav">
+          <li><a href="#" style="letter-spacing: 1px; color: #fff; margin-left: 85px;">Hubungi Kami : </a></li>
+          <p style="color: #F36F36; float: left; margin-top: 20px; margin-left: -10px; letter-spacing: 2px;">0274 - 566 569</p>
+        </ul>
+
+        <div class="row" style="margin-left: 800px; margin-top: 9px;">
+          <div class="col-md-8">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+              <button type="button" class="btn btn-danger" data-toggle="modal" href='#myModal'>Login</button>
+              <a class="btn btn-sm btn-info" href="<?php echo base_url("index.php/home/register"); ?>">DAFTAR</a>
+            </div>
+          </div>
+        </div>
       </div>
-  </nav
+    </nav> <!-- end navbar -->
 
   <!— Modal —>
   <div class="modal fade modal_costume" id="myModal" role="dialog">

@@ -11,7 +11,7 @@
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/css/style_catalog.css"); ?>">
    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     !-->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap/dist/js/bootstrap.min.js"); ?>"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap/js/dropdown.js"); ?>"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/material/dist/js/ripples.min.js"); ?>"></script>
@@ -23,19 +23,7 @@
 </head>
 
 <style type="text/css" media="screen">
-   .navbar {
-      min-height: 10px;
-   }
-
-   body {
-      background-color: #fff;
-   }
-
-   .iklan {
-      border: 1px solid #dedede;
-   }
-
-   .brand {
+     .brand {
       font-weight: bold;
       font-size: 23px;
       word-spacing: 10px;
@@ -45,29 +33,9 @@
       color: #FF5A00;
    }
 
-
-   .nav li > a {
-      margin-top: -8px;
+   body {
+    background-color: #fff;
    }
-
-   .hover-link a {
-      color: black;
-   }
-
-   .footer-set {
-      font-weight: bold;
-      font-size: 15px;
-      color: #000;
-   }
-
-   .navbar-nav { color: #000; }
-
-   .move-button {
-      margin-left: -30px;
-   }
-
-   .navbar {min-height: 4px;}
-   .navbar-brand {padding: 0 15px; height: 4px; line-height: 80px;}
 
    .img-sidebar img {
       display: block;
@@ -135,7 +103,7 @@
                                                <input type="text" class="form-control" name="username" placeholder="Username" aria-describedby="sizing-addon2" maxlength="15">
                                            </div>
                                         </div>
-                                      </div>     
+                                      </div>
                                  </div><br>
 
                                  <div class="form-group" style="margin-top: 22px;">
@@ -149,13 +117,13 @@
                                                <input type="password" class="form-control" name="password" placeholder="Password" aria-describedby="sizing-addon2" maxlength="15">
                                            </div>
                                         </div>
-                                      </div>     
+                                      </div>
                                  </div><br>
 
                                  <!-- jenis kelamin -->
                                  <div class="form-group" style="margin-top: 22px;">
                                       <div class="row">
-                                        <label class="col-lg-3 control-label">Jenis Kelamin 
+                                        <label class="col-lg-3 control-label">Jenis Kelamin
                                         <sup style="color: red; font-size: 17px;">*</sup></label>
                                         <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                                            <div class="input-group">
@@ -183,7 +151,7 @@
                                                <input type="text" class="form-control" name="telp" placeholder="Nomor Handphone" aria-describedby="sizing-addon2" maxlength="15">
                                            </div>
                                         </div>
-                                      </div>     
+                                      </div>
                                  </div><br>
 
                                  <!-- alamat member -->

@@ -23,19 +23,7 @@
 </head>
 
 <style type="text/css" media="screen">
-   .navbar {
-      min-height: 10px;
-   }
-
-   body {
-      background-color: #fff;
-   }
-
-   .iklan {
-      border: 1px solid #dedede;
-   }
-
-   .brand {
+     .brand {
       font-weight: bold;
       font-size: 23px;
       word-spacing: 10px;
@@ -45,29 +33,9 @@
       color: #FF5A00;
    }
 
-
-   .nav li > a {
-      margin-top: -8px;
+   body {
+    background-color: #fff;
    }
-
-   .hover-link a {
-      color: black;
-   }
-
-   .footer-set {
-      font-weight: bold;
-      font-size: 15px;
-      color: #000;
-   }
-
-   .navbar-nav { color: #000; }
-
-   .move-button {
-      margin-left: -30px;
-   }
-
-   .navbar {min-height: 4px;}
-   .navbar-brand {padding: 0 15px; height: 4px; line-height: 80px;}
 
    .img-sidebar img {
       display: block;
