@@ -12,13 +12,7 @@
 		}
 
 		public function form_tambah_barang() {
-
-			$this->data['kategori'] = array();
-
-			$this->load->view("admin_handle/data_barang_view", $this->data);
-
 			$this->load->view("admin_handle/data_barang_view");
-
 		}
 
 		public function list_data_barang() {
