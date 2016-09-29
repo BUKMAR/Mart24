@@ -16,4 +16,4 @@
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>
-	</nav
+	</nav>
