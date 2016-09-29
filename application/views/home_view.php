@@ -37,10 +37,12 @@
 
    .brand {
       font-weight: bold;
-      font-size: 19px;
+      font-size: 23px;
       word-spacing: 10px;
       letter-spacing: 4px;
       color: #fff;
+      font-style: oblique;
+      color: #FF5A00;
    }
 
 
@@ -143,7 +145,7 @@
                                        <p style="font-size: 15px; margin: 0px;" class="text-danger"><del>Rp. 20.0000,-<del></p>
                                        <p style="font-size: 25px; font-weight: 700;">Rp. 40.000,-</p>
                                     </div>
-                                    <a class="btn btn-md btn-danger" href="#" role="button" style="background-color: #FF5A00;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Pesan Sekarang</a>
+                                    <a class="btn btn-md btn-danger" href="#" role="button" style="background-color: #FF5A00; font-style: oblique;"><!-- <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->Pesan Sekarang</a>
                                  </div>
                               </div>
                            </div>
@@ -155,12 +157,12 @@
                </div>
             <?php endfor ?>
 
-         <nav class="navbar navbar-default" role="navigation" style="background-color: #183544;">
+         <nav class="navbar navbar-default" role="navigation" style="background-color: #183544; margin-top: 150px;">
             <div class="container">
                <div class="row">
                  <div class="col-md-5 col-md-offset-4" style="letter-spacing: 2px;  font-weight: bold; margin-top: 10px;">BUKMAR</div>
                </div>
-            <ul class="nav navbar-nav" style="margin-left: 190px; float: left; color: #fff;">
+            <ul class="nav navbar-nav" style="margin-left: 190px; margin-top: 10px; list-style: none; float: left; color: #fff;">
                <li><a href="#">Sragen</a></li>
                <li><a href="#">Jakarta</a></li>
                <li><a href="#">Yogyakarta</a></li>
@@ -170,11 +172,11 @@
                <li><a href="#">Malang</a></li>
             </ul>
             </div>
-            <div class="container" style="margin-left: 15px;">
+            <div class="container" style="margin-left: 15px; margin-top: 25px;">
                <div class="row">
                  <div class="col-md-4">
-                    <p style="letter-spacing: 2px; margin-left: -5px;">Informasi</p>
-                    <div class="list-group" style="margin-left: -20px; font-size: 12px;">
+                    <p style="letter-spacing: 2px;">Informasi</p>
+                    <div class="list-group" style="margin: 0px; list-style: none; margin-left: -13px; font-size: 12px;">
                        <a href="#" class="list-group-item active">Tentang Bukmar</a>
                        <a href="#" class="list-group-item active">Hubungi Kami</a>
                        <a href="#" class="list-group-item active">Karir</a>
@@ -183,8 +185,8 @@
                     </div>
                  </div>
                  <div class="col-md-4">
-                    <p style="letter-spacing: 2px; margin-left: -5px;">Bukmar</p>
-                    <div class="list-group" style="margin-left: -20px; font-size: 12px;">
+                    <p style="letter-spacing: 2px;">Bukmar</p>
+                    <div class="list-group" style="margin: 0px; margin-left: -13px; font-size: 12px;">
                        <a href="#" class="list-group-item active">Syarat dan Ketentuan</a>
                        <a href="#" class="list-group-item active">Kebijakan Privasi</a>
                        <a href="#" class="list-group-item active">Daftar Produk</a>
@@ -192,8 +194,8 @@
                     </div>
                  </div>
                  <div class="col-md-4">
-                    <p style="letter-spacing: 2px; margin-left: -5px;">Bantuan</p>
-                    <div class="list-group" style="margin-left: -20px; font-size: 12px;">
+                    <p style="letter-spacing: 2px;">Bantuan</p>
+                    <div class="list-group" style="margin: 0px; margin-left: -13px; font-size: 12px;">
                        <a href="#" class="list-group-item active">Ada Pertanyaan ?</a>
                        <a href="#" class="list-group-item active">Hubungi Kami di Live Chat</a>
                        <a href="#" class="list-group-item active">Email : bukmarwidoro@gmail.com</a>
@@ -203,6 +205,22 @@
                  </div>
                </div>
             </div>
+
+            <div class="container">
+               <div class="row">
+                 <div class="col-md-5 col-md-offset-4" style="margin-top: 55px;">
+                    Ikuti Media Sosial Kami
+                 </div>
+                 <ul class="nav navbar-nav" style="margin-left: 290px; margin-top: 10px; float: left; color: #fff;">
+                     <li><a href="#"><img src="<?php echo base_url("assets/images/icon/facebook_grey.png"); ?>" class="img-responsive" alt="Image" width="40" height="40"></a></li>
+                     <li><a href="#"><img src="<?php echo base_url("assets/images/icon/google+_grey.png"); ?>" class="img-responsive" alt="Image" width="40" height="40"></a></li>
+                     <li><a href="#"><img src="<?php echo base_url("assets/images/icon/instagram_grey.png"); ?>" class="img-responsive" alt="Image" width="40" height="40"></a></li>
+                     <li><a href="#"><img src="<?php echo base_url("assets/images/icon/twitter_gray.png"); ?>" class="img-responsive" alt="Image" width="40" height="40"></a></li>
+                     <li><a href="#"><img src="<?php echo base_url("assets/images/icon/youtube_grey.png"); ?>" class="img-responsive" alt="Image" width="40" height="40"></a></li>
+                  </ul>
+               </div>
+            </div>
+
          </nav>
 
 
@@ -213,3 +231,4 @@
 
 </body>
 </html>
+
