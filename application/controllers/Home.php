@@ -73,21 +73,30 @@ class Home extends CI_Controller {
 			"alamat2" => $alamat2
 		);
 
-		$member_model = $member_model->insert($member_data);
+		$member_id = $member_model->insert($member_data);
+		$this->load->model("Barang_model");
 
-		if($member_model) {
-			$this->data["status_insert_member"] = true;
+		$barang_model = new Barang_Model();
 
-			$this->load->view("home_view", $this->data);
-		} else {
-			$this->data["status_insert_member"] = false;
+		$this->data['barang'] = $barang_model->fetch_all();
 
-			$this->load->view("home_view", $this->data);
-		}
+		$this->data["status_insert"] = "berhasil";
+
+		$this->load->view("home_view", $this->data);
 	}
 
 	public function pesan_barang() {
-		$this->load->view('register_view');
+		if($this->is_member_logged_in()) {
+			$this->load->view('form_detail_beli_view');
+		} else {
+			$this->load->view('register_view');
+		}
+	}
+
+	function is_member_logged_in() {
+		$state = $this->session->userdata('username');
+		 
+		return !empty($state) ? true : false;
 	}
 
 }

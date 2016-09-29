@@ -14,12 +14,19 @@
 
 			$member = $member_model->login(
 				$this->input->post("username"),
-				$this->input->post("password")
+				md5($this->input->post("password"))
 			);
 
-			print_r($member);
-			//$this->session->set_userdata($member);
-			//redirect(site_url()); 
+			if(count($member) > 0) {
+				$item = $member[0];
+
+				$this->session->set_userdata(array(
+					"nama_depan" => $item['nama_depan'],
+					"username" => $item['username']
+				));
+				
+				redirect(site_url());
+			}
 		}
 
 	}

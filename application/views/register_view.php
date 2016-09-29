@@ -146,7 +146,7 @@
                                                <span class="input-group-addon" id="sizing-addon2">
                                                    <span class="glyphicon glyphicon-lock"></span>
                                                </span>
-                                               <input type="password" class="form-control" name="tlpn" placeholder="Password" aria-describedby="sizing-addon2" maxlength="15">
+                                               <input type="password" class="form-control" name="password" placeholder="Password" aria-describedby="sizing-addon2" maxlength="15">
                                            </div>
                                         </div>
                                       </div>     

@@ -9,8 +9,8 @@
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/material/dist/css/material.min.css"); ?>">
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/material/dist/css/ripples.min.css"); ?>">
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/css/style_catalog.css"); ?>">
-   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"> -->
-
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    !-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap/dist/js/bootstrap.min.js"); ?>"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap/js/dropdown.js"); ?>"></script>
@@ -23,9 +23,9 @@
 </head>
 
 <style type="text/css" media="screen">
-	.navbar {
-		min-height: 10px;
-	}
+   .navbar {
+      min-height: 10px;
+   }
 
    body {
       background-color: #fff;
@@ -46,13 +46,13 @@
    }
 
 
-	.nav li > a {
-		margin-top: -8px;
-	}
+   .nav li > a {
+      margin-top: -8px;
+   }
 
-	.hover-link a {
-		color: black;
-	}
+   .hover-link a {
+      color: black;
+   }
 
    .footer-set {
       font-weight: bold;
@@ -79,6 +79,7 @@
 
 <body>
    <?php require_once(APPPATH .'views/templates/navigasi.php'); ?>
+
    <div class="container-fluid">
       <div id="wrapper" style="margin-left: 30px;">
         <!-- Sidebar -->
@@ -92,40 +93,34 @@
          <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-            <?php
-                if(isset($status_insert)) {
-                  if($status_insert == 'berhasil') {
-                    echo "<div class='alert alert-info' style='background-color: #C8E6C9; color: #33691E;'>
-                          <button type='button' class='close' data-dismiss='alert' aria-hidden='true'></button>
-                          Register berhasil dilakukan harap menunggu verifikasi</div>";
-                  }
-                }
-            ?>
-            <?php for ($i = 0; $i < count($barang); $i++): ?>
-               <?php $item = $barang[$i]; ?>
                <div class="row">
                   <div class="col-xs-8 col-sm-8 col-md-12">
                      <div class="container-fluid">
+                        <!-- content data barang -->
                         <div class="panel panel-default">
                            <div class="panel-body">
                            <!-- panel body katalog -->
                               <div class="row">
                                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <img src="<?php echo base_url($item['foto']); ?>" class="img-responsive" alt="Image">
+                                    <img src="<?php echo base_url("assets/images/masako.jpg"); ?>" class="img-responsive" alt="Image">
                                  </div>
                                  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                     <div class="table-responsive" style="margin: 0px;">
                                        <table class="table" style="margin: 0px;">
                                           <thead>
                                              <tr>
-                                                <th><h3 style="margin: 0px;"><?php echo $item['nama_paket']; ?></h3></th>
+                                                <th><h3 style="margin: 0px;">Paket 1</h3></th>
                                              </tr>
                                           </thead>
                                           <tbody>
                                              <tr>
                                                 <td>
                                                    <p>Keterangan</p>
-                                                   <?php echo $item['keterangan']; ?>
+                                                   <div class="list-group">
+                                                      <a href="#" class="list-group-item active">Item 1</a>
+                                                      <a href="#" class="list-group-item">Item 2</a>
+                                                      <a href="#" class="list-group-item">Item 3</a>
+                                                   </div>
                                                 </td>
                                                 <td><p class="text-success" style="font-weight: bold;">Stok Tersedia</p></td>
                                              </tr>
@@ -134,17 +129,53 @@
                                        <p style="font-size: 15px; margin: 0px;" class="text-danger"><del>Rp. 20.0000,-<del></p>
                                        <p style="font-size: 25px; font-weight: 700;">Rp. 40.000,-</p>
                                     </div>
-                                    <a class="btn btn-md btn-danger" href="<?php echo base_url('index.php/home/pesan_barang'); ?>" role="button" style="background-color: #FF5A00;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Pesan Sekarang</a>
                                  </div>
                               </div>
                            </div>
                         </div>
+
+                        <!-- detail order barang -->
+
+                        <div class="panel panel-default">
+                           <div class="panel-body">
+                              <table class="table" border="0">
+                                 <thead>
+                                    <tr>
+                                       <td>Nama Pembeli</td>
+                                       <td></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Nomor Telepon</td>
+                                       <td></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Tanggal Pesan</td>
+                                       <td></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Alamat</td>
+                                       <td>
+                                          <select name="alamat" id="inputAlamat" class="form-control" required="required">
+                                             <option value="">Alamat 1</option>
+                                             <option value="">Alamat 2</option>
+                                          </select>
+                                          <span>
+                                             Alamat yang di tuju
+                                          </span>
+                                       </td>
+                                    </tr>
+                                 </thead>
+                              </table>
+                           </div>
+                           <div class="panel-footer">
+                              <a class="btn btn-sm btn-success" href="#" role="button">Order Sekarang</a>
+                           </div>
+                        </div> <!-- end panel detail order barang -->
+
+
                      </div>
-               <div class="row">
-                  <div class="col-xs-8 col-sm-8 col-md-12">
                   </div> <!-- end col content -->
                </div>
-            <?php endfor ?>
 
          <nav class="navbar navbar-default" role="navigation" style="background-color: #183544; margin-top: 150px;">
             <div class="container">
@@ -209,15 +240,12 @@
                   </ul>
                </div>
             </div>
-
          </nav>
-
-
 
         <!-- /#page-content-wrapper -->
       </div> <!-- end wrapper menu left -->
    </div>
-
 </body>
 </html>
+
 
