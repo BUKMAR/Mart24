@@ -34,12 +34,12 @@
  		public function login($username, $password) {
  			$this->db->select("*");
  			$this->db->from("member");
- 			$this->db->where("username=$username AND password=$password");
+ 			$this->db->where("`username`='". $username ."' AND `password`='". $password."'");
  			$query = $this->db->get();
 
  			$rows = $query->result_array();
 
- 			return $rows[0];
+ 			return $rows;
  		}
 
 	}

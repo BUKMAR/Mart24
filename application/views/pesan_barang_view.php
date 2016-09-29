@@ -10,8 +10,8 @@
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/material/dist/css/ripples.min.css"); ?>">
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/css/style_catalog.css"); ?>">
    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    !-->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap/dist/js/bootstrap.min.js"); ?>"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap/js/dropdown.js"); ?>"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/material/dist/js/ripples.min.js"); ?>"></script>
@@ -78,7 +78,25 @@
 </style>
 
 <body>
-   <?php require_once(APPPATH .'views/templates/navigasi.php'); ?>
+   <nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="background-color: #183544;">
+         <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+               <ul class="nav navbar-nav">
+                  <li><a href="#">  <p class="brand">BUKMAR</sub>.com</p></a></li>
+                  <li><a href="#" style="letter-spacing: 1px; color: #fff; margin-left: 85px;">Hubungi Kami : </a></li><p style="color: #F36F36; float: left; margin-top: 13px; margin-left: -10px; letter-spacing: 2px;">0274 - 566 569</p>
+               </ul>
+               <ul class="nav navbar-nav navbar-right move-button">
+                  <li>
+                     <button type="button" class="btn btn-sm btn-danger">LOGIN</button>
+                  </li>
+                  <li>
+                     <button type="button" class="btn btn-sm btn-success">DAFTAR</button>
+                  </li>
+               </ul>
+            </div><!-- /.navbar-collapse -->
+         </div>
+   </nav
 
    <div class="container-fluid">
       <div id="wrapper" style="margin-left: 30px;">
@@ -100,121 +118,80 @@
                            <div class="panel-heading">
                               <h3 class="panel-title">Register</h3>
                            </div>
-                           <div class="panel-body" style="padding: 65px; border: 1px solid #dedede; margin: 25px;">
-                              <form action="<?php echo base_url("index.php/home/submit_data_member"); ?>" method="POST" id="defaultForm" >
+                           <div class="panel-body" style="padding: 35px; border: 1px solid #dedede; margin: 25px;">
+                              <form action="" method="POST" id="defaultForm" >
                                  <!-- nama membar -->
                                  <div class="form-group">
-                                      <div class="row">
-                                        <label class="col-lg-3 control-label">
-                                        Nama Member <sup style="color: red; font-size: 17px;">*</sup>
-                                        </label>
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                           <div class="input-group">
-                                               <span class="input-group-addon" id="sizing-addon2">
-                                                   <span class="glyphicon glyphicon-user"></span>
-                                               </span>
-                                               <input type="text" class="form-control" name="nama-depan" placeholder="Nama Depan" aria-describedby="sizing-addon1">
-                                           </div>
-                                        </div>
-                                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                                           <div class="input-group">
-                                               <input type="text" class="form-control" name="nama-belakang" placeholder="Nama Belakang" aria-describedby="sizing-addon1">
-                                           </div>
-                                        </div>
+                                      <label class="col-lg-3 control-label">Nama Member <sup style="color: red; font-size: 17px;">*</sup></label>
+                                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                         <div class="input-group">
+                                             <span class="input-group-addon" id="sizing-addon2">
+                                                 <span class="glyphicon glyphicon-user"></span>
+                                             </span>
+                                             <input type="text" class="form-control" name="nama-depan" placeholder="Nama Depan" aria-describedby="sizing-addon1">
+                                         </div>
+                                      </div>
+                                      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                                         <div class="input-group">
+                                             <input type="text" class="form-control" name="nama-belakang" placeholder="Nama Belakang" aria-describedby="sizing-addon1">
+                                         </div>
                                       </div>
                                  </div><br>
 
-                                 <div class="form-group" style="margin-top: 22px;">
-                                      <div class="row">
-                                        <label class="col-lg-3 control-label">Username <sup style="color: red; font-size: 17px;">*</sup></label>
-                                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-                                           <div class="input-group">
-                                               <span class="input-group-addon" id="sizing-addon2">
-                                                   <span class="glyphicon glyphicon-user"></span>
-                                               </span>
-                                               <input type="text" class="form-control" name="username" placeholder="Username" aria-describedby="sizing-addon2" maxlength="15">
-                                           </div>
-                                        </div>
-                                      </div>     
-                                 </div><br>
-
-                                 <div class="form-group" style="margin-top: 22px;">
-                                      <div class="row">
-                                        <label class="col-lg-3 control-label">Password <sup style="color: red; font-size: 17px;">*</sup></label>
-                                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-                                           <div class="input-group">
-                                               <span class="input-group-addon" id="sizing-addon2">
-                                                   <span class="glyphicon glyphicon-lock"></span>
-                                               </span>
-                                               <input type="password" class="form-control" name="tlpn" placeholder="Password" aria-describedby="sizing-addon2" maxlength="15">
-                                           </div>
-                                        </div>
-                                      </div>     
-                                 </div><br>
-
                                  <!-- jenis kelamin -->
+
                                  <div class="form-group" style="margin-top: 22px;">
-                                      <div class="row">
-                                        <label class="col-lg-3 control-label">Jenis Kelamin 
-                                        <sup style="color: red; font-size: 17px;">*</sup></label>
-                                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-                                           <div class="input-group">
-                                               <span class="input-group-addon" id="sizing-addon2">
-                                                   <span class="glyphicon glyphicon-heart"></span>
-                                               </span>
-                                               <select name="jenis-kelamin" id="inputJenis_kalmin" class="form-control" required="required">
-                                                  <option value="Laki laki">Laki laki</option>
-                                                  <option value="Perempuan">Perempuan</option>
-                                               </select>
-                                           </div>
-                                        </div>
+                                      <label class="col-lg-3 control-label">Jenis Kelamin <sup style="color: red; font-size: 17px;">*</sup></label>
+                                      <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                                         <div class="input-group">
+                                             <span class="input-group-addon" id="sizing-addon2">
+                                                 <span class="glyphicon glyphicon-heart"></span>
+                                             </span>
+                                             <select name="jenis-kelamin" id="inputJenis_kalmin" class="form-control" required="required">
+                                                <option value="">Laki - Laki</option>
+                                                <option value="">Perempuan</option>
+                                             </select>
+                                         </div>
                                       </div>
                                  </div><br>
 
                                  <!-- no telepon -->
                                  <div class="form-group" style="margin-top: 22px;">
-                                      <div class="row">
-                                        <label class="col-lg-3 control-label">Nomor Handphone <sup style="color: red; font-size: 17px;">*</sup></label>
-                                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-                                           <div class="input-group">
-                                               <span class="input-group-addon" id="sizing-addon2">
-                                                   <span class="glyphicon glyphicon-phone"></span>
-                                               </span>
-                                               <input type="text" class="form-control" name="telp" placeholder="Nomor Handphone" aria-describedby="sizing-addon2" maxlength="15">
-                                           </div>
-                                        </div>
-                                      </div>     
+                                      <label class="col-lg-3 control-label">Nomor Handphone <sup style="color: red; font-size: 17px;">*</sup></label>
+                                      <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                                         <div class="input-group">
+                                             <span class="input-group-addon" id="sizing-addon2">
+                                                 <span class="glyphicon glyphicon-phone"></span>
+                                             </span>
+                                             <input type="text" class="form-control" name="tlpn" placeholder="Nomor Handphone" aria-describedby="sizing-addon2" maxlength="15">
+                                         </div>
+                                      </div>
                                  </div><br>
 
                                  <!-- alamat member -->
                                  <div class="form-group" style="margin-top: 22px;">
-                                      <div class="row">
-                                        <label class="col-lg-3 control-label">Alamat 1 <sup style="color: red; font-size: 17px;">*</sup></label>
+                                      <label class="col-lg-3 control-label">Alamat 1 <sup style="color: red; font-size: 17px;">*</sup></label>
                                       <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                                          <div class="input-group">
                                              <span class="input-group-addon" id="sizing-addon2">
-                                                 <!--<span class="glyphicon glyphicon-pencil"></span> -->
+                                                 <span class="glyphicon glyphicon-pencil"></span>
                                              </span>
                                              <textarea name="alamat1" id="inputAlamat1" class="form-control" rows="6" required="required"></textarea>
                                          </div>
                                       </div>
-                                      </div>
                                  </div>
 
                                  <div class="form-group" style="margin-top: 22px;">
-                                      <div class="row">
-                                        <label class="col-lg-3 control-label">Alamat 1 <sup style="color: red; font-size: 17px;">*</sup></label>
+                                      <label class="col-lg-3 control-label">Alamat 2 <sup style="color: red; font-size: 17px;">*</sup></label>
                                       <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                                          <div class="input-group">
                                              <span class="input-group-addon" id="sizing-addon2">
-                                                 <!--<span class="glyphicon glyphicon-pencil"></span> -->
+                                                 <span class="glyphicon glyphicon-pencil"></span>
                                              </span>
-                                             <textarea name="alamat2" id="inputAlamat2" class="form-control" rows="6" required="required"></textarea>
+                                             <textarea name="alamat2" id="inputAlamat3" class="form-control" rows="6" required="required"></textarea>
                                          </div>
                                       </div>
-                                      </div>
-                                 </div>
-
+                                 </div> <br>
 
                                  <div class="form-group">
                                       <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
