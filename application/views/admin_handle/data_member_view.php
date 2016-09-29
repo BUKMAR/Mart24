@@ -33,7 +33,7 @@
                     <div class="col-lg-12">
                       <div class="container-fluid">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                          <legend><h1><small><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> List Data Transaksi</small></h1></legend>
+                          <legend><h1><small><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> List Data Member</small></h1></legend>
                           <hr/>
                           <!-- bagian view list data -->
                           <br/>
