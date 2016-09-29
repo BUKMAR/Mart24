@@ -22,7 +22,7 @@
 			$this->load->model("Barang_model");
 
 			$barang_model = new Barang_Model();
-			
+
 			$jumlah_total_barang = $barang_model->count_all();
 			$this->data['jumlah_total_barang'] = $jumlah_total_barang;
 			$this->data['barang'] = $barang_model->fetch_all();
@@ -181,8 +181,8 @@
 	             $row[] = "<button class='btn btn-sm btn-info' data-toggle='modal' data-target='#id-$i'>
  						   <span class='glyphicon glyphicon-pencil'></span>
 	             		   </button>
-	             		   
-	             		   <button class='btn btn-sm btn-danger brg-delete' 
+
+	             		   <button class='btn btn-sm btn-danger brg-delete'
 	             		   data-brg-id='". $barang->id_barang ."'
 	             		   data-brg-nama-paket='". $barang->nama_paket ."'>
 	             		   <span class='glyphicon glyphicon-trash'></span></button>
