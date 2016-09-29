@@ -9,9 +9,9 @@
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/material/dist/css/material.min.css"); ?>">
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/material/dist/css/ripples.min.css"); ?>">
    <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/css/style_catalog.css"); ?>">
-   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"> -->
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap/dist/js/bootstrap.min.js"); ?>"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap/js/dropdown.js"); ?>"></script>
    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/material/dist/js/ripples.min.js"); ?>"></script>
@@ -78,26 +78,7 @@
 </style>
 
 <body>
-	<nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="background-color: #183544;">
-			<div class="container">
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav">
-						<li><a href="#">  <p class="brand">BUKMAR</sub>.com</p></a></li>
-                  <li><a href="#" style="letter-spacing: 1px; color: #fff; margin-left: 85px;">Hubungi Kami : </a></li><p style="color: #F36F36; float: left; margin-top: 13px; margin-left: -10px; letter-spacing: 2px;">0274 - 566 569</p>
-					</ul>
-					<ul class="nav navbar-nav navbar-right move-button">
-						<li>
-              <a class="btn btn-sm btn-danger" href="<?php echo base_url("index.php/home/login"); ?>">LOGIN</a>
-            </li>
-	          <li>
-              <a class="btn btn-sm btn-success" href="<?php echo base_url("index.php/home/register"); ?>">DAFTAR</a>
-            </li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div>
-	</nav
-
+   <?php require_once(APPPATH .'views/templates/navigasi.php'); ?>
    <div class="container-fluid">
       <div id="wrapper" style="margin-left: 30px;">
         <!-- Sidebar -->
