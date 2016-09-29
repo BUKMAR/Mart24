@@ -92,6 +92,10 @@
          <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
+            <div class="alert alert-info" style="background-color: #C8E6C9; color: #33691E;">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+              Register berhasil dilakukan harap menunggu verifikasi ...
+            </div>
 
             <?php for ($i = 0; $i < count($barang); $i++): ?>
                <?php $item = $barang[$i]; ?>
