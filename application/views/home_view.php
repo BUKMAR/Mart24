@@ -88,11 +88,11 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right move-button">
 						<li>
-                     <button type="button" class="btn btn-sm btn-danger">LOGIN</button>
-                  </li>
-	               <li>
-                     <button type="button" class="btn btn-sm btn-success">DAFTAR</button>
-                  </li>
+              <a class="btn btn-sm btn-danger" href="<?php echo base_url("index.php/home/login"); ?>">LOGIN</a>
+            </li>
+	          <li>
+              <a class="btn btn-sm btn-success" href="<?php echo base_url("index.php/home/register"); ?>">DAFTAR</a>
+            </li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>
