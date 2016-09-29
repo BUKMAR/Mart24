@@ -19,7 +19,17 @@
 
    			return  $insert_id;
 		}
- 
+
+		public function delete($id) {
+			$this->db->where("id_barang", $id);
+			$this->db->delete("barang");
+		}
+
+		public function update($id, $data) {
+			$this->db->where("id_barang", $id);
+			$this->db->update("barang", $data);
+		}
+	 
  		public function fetch_all() {
  			$this->db->select("*");
  			$this->db->from("barang");
