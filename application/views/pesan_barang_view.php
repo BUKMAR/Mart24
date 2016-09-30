@@ -27,11 +27,7 @@
    <div class="container-fluid">
       <div id="wrapper" style="margin-left: 30px;">
         <!-- Sidebar -->
-        <div id="sidebar-wrapper" style="width: 285px;">
-            <div class="img-sidebar">
-               <img src="<?php echo base_url("assets/images/icon.jpg"); ?>" class="img-responsive" alt="Image" >
-            </div>
-        </div>
+        <?php require_once(APPPATH .'views/templates/sidebar.php'); ?>
         <!-- /#sidebar-wrapper -->
 
          <!-- Page Content -->
