@@ -42,6 +42,11 @@
 			$this->load->view("admin_handle/kategori_barang_view");
 		}
 
+		public function nota()
+		{
+			$this->load->view("admin_handle/nota_view");
+		}
+
 		public function stok_barang() {
 			$this->load->view("admin_handle/stok_barang_view");
 		}

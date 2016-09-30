@@ -30,29 +30,6 @@
     </div>
   </nav>
 
-  <!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #183544; margin-top: -5px;">
-      <div class="container">
-        <a class="navbar-brand" href="#"><p class="brand">BUKMAR</sub>.com</p></a>
-        <ul class="nav navbar-nav">
-          <li><a href="#" style="letter-spacing: 1px; color: #fff; margin-left: 85px;">Hubungi Kami : </a></li>
-          <p style="color: #F36F36; float: left; margin-top: 20px; margin-left: -10px; letter-spacing: 2px;">0274 - 566 569</p>
-        </ul>
-
-        <div class="row" style="margin-left: 800px; margin-top: 9px;">
-          <div class="col-md-9">
-            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-              <button type="button" class="btn btn-danger" data-toggle="modal" href='#myModal'>Login</button>
-              <a class="btn btn-sm btn-info" href="<?php echo base_url("index.php/home/register"); ?>">DAFTAR</a>
-              <button class="btn btn-sm btn-warning" href="" style="background-color: none;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><span class="badge" style="margin-top: -5px; background-color: none; color: #000; margin-left: 15px;">24</span></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav> --> <!-- end navbar -->
-
-
-
-
   <!— Modal —>
   <div class="modal fade modal_costume" id="myModal" role="dialog">
     <div class="modal-dialog">
