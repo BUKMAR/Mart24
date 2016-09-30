@@ -3,30 +3,6 @@
 <head>
   <?php require_once(APPPATH .'views/include/include_module.php'); ?>
 </head>
-
-<style type="text/css" media="screen">
-     .brand {
-      font-weight: bold;
-      font-size: 23px;
-      word-spacing: 10px;
-      letter-spacing: 4px;
-      color: #fff;
-      font-style: oblique;
-      color: #FF5A00;
-   }
-
-   body {
-    background-color: #fff;
-   }
-
-   .img-sidebar img {
-      display: block;
-      width: 245px;
-      margin-left: auto;
-      margin-right: auto;
-   }
-</style>
-
 <body>
    <nav class="navbar navbar-info navbar-fixed-top" role="navigation" style="background-color: #183544;">
          <div class="container">

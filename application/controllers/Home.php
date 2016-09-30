@@ -95,8 +95,13 @@ class Home extends CI_Controller {
 
 	function is_member_logged_in() {
 		$state = $this->session->userdata('username');
-		 
+
 		return !empty($state) ? true : false;
+	}
+
+	public function detail_keranjang_belanja()
+	{
+		$this->load->view('detail_keranjang_belanja_view');
 	}
 
 }
