@@ -18,7 +18,7 @@
 
    <!-- include javascript -->
    <script type="text/javascript" src="<?php echo base_url('assets/node_modules/jquery/dist/jquery.min.js'); ?>"></script>
-   <script type="text/javascript" src="<?php //echo base_url('assets/node_modules/bootstrap/dist/js/bootstrap.min.js'); ?>"></script>
+   <script type="text/javascript" src="<?php echo base_url('assets/node_modules/bootstrap/dist/js/bootstrap.min.js'); ?>"></script>
    <script type="text/javascript" src="<?php echo base_url('assets/node_modules/material/dist/js/material.min.js'); ?>"></script>
 
    <script type="text/javascript" src="<?php echo base_url('assets/node_modules/bootstrap/js/dropdown.js'); ?>"></script>

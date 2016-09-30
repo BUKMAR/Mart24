@@ -62,7 +62,7 @@
         <div class="modal-header" style="margin-left: auto; margin-right: auto;">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">
-             <img src="<?php echo base_url("assets/images/icon.jpg"); ?>" width="100" height="100" class="img-responsive" alt="Image">
+             <img src="<?php echo base_url("assets/images/logo.png"); ?>" width="100" height="100" class="img-responsive" alt="Image">
           </h4>
         </div>
         <div class="modal-body">
