@@ -20,16 +20,16 @@
 </head>
 <body>
    <div class="container-fluid">
-       <?php require_once(APPPATH.'views/admin_handle/templates/navigasi.php'); ?>
+       <?php //require_once(APPPATH.'views/admin_handle/templates/navigasi.php'); ?>
        <div id="wrapper">
-            <?php require_once(APPPATH.'views/admin_handle/templates/sidebar.php'); ?>
+            <?php //require_once(APPPATH.'views/admin_handle/templates/sidebar.php'); ?>
 
          <!-- Page Content -->
         <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <div class="container-fluid" style="margin-left: -200px;">
                <div class="row">
                   <div class="col-lg-12">
-                    <div class="container-fluid" style="padding: 35px; border: 1px solid #dedede; margin: 15px;">
+                    <div class="container-fluid" style="padding-left: 30px; padding-right: 30px;">
                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <h1 align="center">RIWAYAT BELANJA ANDA</h1>
 

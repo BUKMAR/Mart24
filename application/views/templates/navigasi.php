@@ -17,13 +17,14 @@
         </ul>
 
         <div class="container">
-          <ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
-            <li><button class="btn btn-sm btn-danger" data-toggle="modal" href='#myModal' style="color: #212121; font-size: 12px; font-weight: bold; background-color: #F57C00;" >Login</button></li>
-            <li><button href="<?php echo base_url("index.php/home/register"); ?>" class="btn btn-sm btn-success" style="color: #212121; font-size: 12px; font-weight: bold; background-color: #1976D2;" >Daftar</button></li>
+          <ul class="nav navbar-nav navbar-right" style="margin-left: -20px;">
+            <button class="btn btn-sm btn-danger" data-toggle="modal" href='#myModal' style="color: #212121; font-size: 12px; font-weight: bold; background-color: #F57C00;" >Login</button>
 
-            <li>
-                <span class="glyphicon glyphicon-shopping-cart" style="margin-left: 25px; width: 20px; height: 20px; margin-top: 20px;" aria-hidden="true"><a href="" title=""><span class="badge" style="margin-left: 15px; margin-top: -50px; height: 20px; width: 30px; background-color: red; color: #000; font-size: 12px;">24</span></a></span>
-            </li>
+            <a href="<?php echo base_url("index.php/home/register"); ?>" class="btn btn-sm btn-success" style="color: #212121; font-size: 12px; font-weight: bold; background-color: #1976D2;" >Daftar</a>
+
+            <span class="glyphicon glyphicon-shopping-cart" style="width: 20px; height: 20px; margin-top: 20px; position: relative; " aria-hidden="true"><a href="" title=""><span class="badge" style="height: 20px; width: 30px; margin-top: -20px; margin-left: 15px; background-color: red; color: #000; font-size: 12px; float: left; position: relative;">24</span></span>
+            </a>
+
           </ul>
         </div>
       </div>
